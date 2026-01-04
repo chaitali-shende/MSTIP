@@ -192,7 +192,3 @@ Java & Spring Boot Developer
 🔗 LinkedIn: www.linkedin.com/in/chaitali-shende-a28779256
 
 
-
-
-
-JPA-based ORM mapping
