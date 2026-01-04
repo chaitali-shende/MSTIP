@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+	<div th:insert="fragments/navbar :: navbar"></div>
+
+	<div class="container">
+		<h1>Hotel Dashboard</h1>
+
+		<div class="dashboard">
+			<div class="card">
+				👤 Customers
+				<span th:text="${totalCustomers}"></span>
+			</div>
+
+			<div class="card">
+				🛏 Rooms
+				<span th:text="${totalRooms}"></span>
+			</div>
+
+			<div class="card">
+				📅 Reservations
+				<span th:text="${totalReservations}"></span>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

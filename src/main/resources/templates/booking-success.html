@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Booking Success</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<div class="container success">
+		<h2>🎉 Booking Successful</h2>
+
+		<p><b>Customer:</b> <span th:text="${reservation.customer.name}"></span></p>
+		<p><b>Room:</b> <span th:text="${reservation.room.roomType}"></span></p>
+		<p><b>Check-in:</b> <span th:text="${reservation.checkInDate}"></span></p>
+		<p><b>Check-out:</b> <span th:text="${reservation.checkOutDate}"></span></p>
+		<p><b>Total:</b> ₹<span th:text="${reservation.totalAmount}"></span></p>
+
+		<a th:href="@{/reservations/book-room}">Book Another</a>
+		<a th:href="@{/dashboard}">Dashboard</a>
+	</div>
+
+</body>
+
+</html>

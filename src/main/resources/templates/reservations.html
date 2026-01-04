@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Reservations</title>
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<div class="navbar">
+		<a th:href="@{/dashboard}">Dashboard</a>
+		<a th:href="@{/rooms}">Rooms</a>
+	</div>
+
+	<div class="container">
+		<h2>All Reservations</h2>
+
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Customer</th>
+				<th>Room</th>
+				<th>Check-in</th>
+				<th>Check-out</th>
+				<th>Status</th>
+				<th>Price</th>
+			</tr>
+
+			<tr th:each="r : ${reservations}">
+				<td th:text="${r.reservationId}"></td>
+				<td th:text="${r.customer.name}"></td>
+				<td th:text="${r.room.roomType}"></td>
+				<td th:text="${r.checkInDate}"></td>
+				<td th:text="${r.checkOutDate}"></td>
+				<td th:text="${r.status}"></td>
+				<td th:text="${r.totalAmount}"></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>

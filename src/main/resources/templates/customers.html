@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Customers</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<div th:insert="fragments/navbar :: navbar"></div>
+
+	<div class="container">
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Mobile</th>
+			</tr>
+			<tr th:each="c : ${customers}">
+				<td th:text="${c.customerId}"></td>
+				<td th:text="${c.name}"></td>
+				<td th:text="${c.email}"></td>
+				<td th:text="${c.mobile}"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
