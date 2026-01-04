@@ -153,9 +153,9 @@ Random reservation dates and statuses for testing
 
 ![](screenshots/rooms.png)
 
-## Book Rooms:
+## Book Room:
 
-![](screenshots/book_rooms.png)
+![](screenshots/book_room.png)
 
 ## Booking Successful:
 
