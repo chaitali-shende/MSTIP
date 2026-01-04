@@ -145,6 +145,10 @@ Random reservation dates and statuses for testing
 
 # Output Screenshots
 
+## Dashboard
+
+![](screenshots/dashboard.png)
+
 
 
 # 📈 Future Enhancements
