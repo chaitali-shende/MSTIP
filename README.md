@@ -145,9 +145,29 @@ Random reservation dates and statuses for testing
 
 # Output Screenshots
 
-## Dashboard
+## Dashboard:
 
 ![](screenshots/dashboard.png)
+
+## Rooms:
+
+![](screenshots/rooms.png)
+
+## Book Rooms:
+
+![](screenshots/book_rooms.png)
+
+## Booking Successful:
+
+![](screenshots/booking_successful.png)
+
+## Customers:
+
+![](screenshots/customers.png)
+
+## Reservations:
+
+![](screenshots/reservation.png)
 
 
 
